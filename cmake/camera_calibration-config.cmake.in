@@ -1,0 +1,24 @@
+# - Config file for the camera_calibration package
+# It defines the following variables
+#  CAMERA_CALIBRATION_INCLUDE_DIRS - include directories for camera_calibration
+#  CAMERA_CALIBRATION_LIBRARIES    - libraries to link against
+#  CAMERA_CALIBRATION_EXECUTABLE   - the camera_calibration executable
+ 
+# Compute paths
+get_filename_component(CAMERA_CALIBRATION_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" DIRECTORY)
+set(CAMERA_CALIBRATION_INCLUDE_DIRS ${CAMERA_CALIBRATION_CMAKE_DIR}/include)
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+if(NOT TARGET camera_calibration AND NOT camera_calibration_BINARY_DIR)
+  include("${FACE_VIDEO_SEGMENT_CMAKE_DIR}/camera_calibration-targets.cmake")
+endif()
+ 
+# These are IMPORTED targets created by camera_calibration-targets.cmake
+set(FACE_VIDEO_SEGMENT_LIBRARIES camera_calibration)
+if(TARGET camera_calibration)
+	set(FACE_VIDEO_SEGMENT_EXECUTABLE mono_camera_calibration)
+endif()
+
+if(camera_calibration_FOUND)
+	message(STATUS "Found camera_calibration!")
+endif()
