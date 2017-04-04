@@ -1,6 +1,3 @@
-# camera_calibration
-Utility for camera calibration
-
 # Camera Calibration
 Created by Yuval Nirkin.
 
