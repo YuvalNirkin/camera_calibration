@@ -23,3 +23,8 @@ This project provides a utility for monocular camera calibration from camera fee
 ## Usage
 - Use mono_camera_calibration to calibrate your camera. This will output "camera_name_calib.cfg".
 - The rectify example shows how to use "camera_name_calib.cfg" for rectifying your camera video stream.
+
+Demonstration video:
+
+[![Demonstration Video](http://img.youtube.com/vi/Ljzi-S7eDLU/0.jpg)](https://www.youtube.com/watch?v=Ljzi-S7eDLU)
+
