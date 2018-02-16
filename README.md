@@ -1,5 +1,5 @@
 # Camera Calibration
-![alt text](https://yuvalnirkin.github.io/assets/img/projects/camera_calibration/thumb.jpg "Teaser")
+![alt text](https://yuvalnirkin.github.io/assets/img/projects/camera_calibration_teaser.jpg "Teaser")
 
 Created by Yuval Nirkin.
 
